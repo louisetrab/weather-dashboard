@@ -1,0 +1,54 @@
+<div class="container vertical">
+  <igx-radial-gauge
+    #radialGauge
+    height="300px"
+    width="300px"
+    minimumValue="-20"
+    value="{{ currentTemp }}"
+    maximumValue="40"
+    interval="5"
+    rangeBrushes="#297dbd, #ffea00, #ff7700, #ff0000"
+    rangeOutlines="#297dbd, #ffea00, #ff7700, #ff0000"
+  >
+ 
+    <igx-radial-gauge-range
+      startValue="-20"
+      endValue="0"
+      innerStartExtent="0.50"
+      innerEndExtent="0.50"
+      outerStartExtent="0.57"
+      outerEndExtent="0.57"
+    >
+    </igx-radial-gauge-range>
+
+    <igx-radial-gauge-range
+      startValue="0"
+      endValue="10"
+      innerStartExtent="0.50"
+      innerEndExtent="0.50"
+      outerStartExtent="0.57"
+      outerEndExtent="0.57"
+    >
+    </igx-radial-gauge-range>
+
+    <igx-radial-gauge-range
+      startValue="10"
+      endValue="20"
+      innerStartExtent="0.50"
+      innerEndExtent="0.50"
+      outerStartExtent="0.57"
+      outerEndExtent="0.57"
+    >
+    </igx-radial-gauge-range>
+
+    <igx-radial-gauge-range
+      startValue="20"
+      endValue="40"
+      innerStartExtent="0.50"
+      innerEndExtent="0.50"
+      outerStartExtent="0.57"
+      outerEndExtent="0.57"
+    >
+    </igx-radial-gauge-range>
+  </igx-radial-gauge>
+</div>
