@@ -4,8 +4,9 @@
 }
 
 .info_row {
-  height: 50%;
+  height: 70%;
   width: 100%;
+  color: white;
 }
 
 .upper {
@@ -18,18 +19,25 @@
 
 .info {
   border-radius: 10px;
-  background-color: rgba(222, 220, 234, 0.3);
+  background: linear-gradient(
+    180deg,
+    rgba(253, 200, 48, 0),
+    rgba(243, 116, 53, 0.205)
+  );
+  box-shadow: 10px 10px 10px var(--shadow-dark);
 }
 
 .info_title {
   position: absolute;
   display: flex;
   padding: 10px 0 0 10px;
+  font-size: 1.1em;
 }
 
 .info_title img {
   position: relative;
   width: 20%;
+  margin-right: 5px;
 }
 
 .box1 {
@@ -68,21 +76,19 @@
   margin: auto;
 }
 
+.temp_info .data {
+  font-size: 1.3em;
+}
+
 .temp_number {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 40px 0 5px 0;
-  color: white;
 }
 
 .info_details {
   display: flex;
   gap: 10px;
   padding: 3px 0;
-  color: white;
-}
-
-.info_title p {
-  color: #3c429e;
 }
 
 .forecast_data {

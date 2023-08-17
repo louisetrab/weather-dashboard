@@ -2,7 +2,10 @@
   <img class="background_image" src="../assets/hot.jpg" />
   <div class="weather-info">
     <div class="inner_container_left">
-      <app-overview (cords)="setLocation($event)" [forecast]="weather"></app-overview>
+      <app-overview
+        (cords)="setLocation($event)"
+        [forecast]="weather"
+      ></app-overview>
     </div>
 
     <div class="inner_container_right">
@@ -10,7 +13,6 @@
     </div>
   </div>
 </div>
-
 
 <!-- <div>
   INFO: <br />
