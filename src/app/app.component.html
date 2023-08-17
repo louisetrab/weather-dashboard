@@ -2,18 +2,14 @@
   <img class="background_image" src="../assets/hot.jpg" />
   <div class="weather-info">
     <div class="inner_container_left">
-      <app-overview></app-overview>
+      <app-overview (cords)="setLocation($event)" [forecast]="weather"></app-overview>
     </div>
+
     <div class="inner_container_right">
-      <app-information></app-information>
-      <app-forecast></app-forecast>
+      <app-information [weatherDetails]="weather"></app-information>
     </div>
   </div>
 </div>
-
-<input #box (keyup)="onKey(box.value)" type="text" placeholder="By navn" />
-<p>WAOW MAGIC TEXT mucho nice: {{ city }}</p>
-<button (click)="getLocation()">GET WEATHER</button>
 
 
 <!-- <div>

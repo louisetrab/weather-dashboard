@@ -7,7 +7,6 @@
 :root {
   --blue-1: #3c429e;
   --blue-2: #4c52ad;
-  --yellow-1: #fac742;
   --grey-1: #ededed;
   --white: #fff;
   --shadow-dark: #0000004d;
@@ -30,7 +29,7 @@ body {
 .container {
   position: relative;
   overflow: hidden;
-  width: 1400px;
+  width: 1000px;
   height: 90vh;
   border-radius: 20px;
   box-shadow: 10px 10px 10px var(--shadow-dark);

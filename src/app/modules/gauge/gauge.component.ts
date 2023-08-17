@@ -7,7 +7,7 @@ import { IgxRadialGaugeComponent } from 'igniteui-angular-gauges';
   styleUrls: ['./gauge.component.css'],
 })
 export class GaugeComponent implements OnInit {
-  @Input() currentTemp: number = 0; // Input property for temperature
+  @Input() currentTemp: any; // Input property for temperature
   @ViewChild('radialGauge', { static: true })
   public radialGauge!: IgxRadialGaugeComponent;
 

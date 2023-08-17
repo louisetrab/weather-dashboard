@@ -1,12 +1,21 @@
 <div class="overview_container">
-  <app-gauge></app-gauge>
+
+    <input
+      #box
+      (keyup)="onKey(box.value)"
+      type="text"
+      placeholder="Search city"
+    />
+    <button (click)="getLocation()">Search</button>
+
+  <app-gauge [currentTemp]="forecast.main.temp"></app-gauge>
   <div class="overview_wrapper">
     <div class="overview_info">
       <img src="../../../assets/sunny.svg" />
-      <p class="overview_number">25°C</p>
+      <p class="overview_number">{{ forecast.main.temp }} °C</p>
       <div class="overview_deets">
         <img src="../../../assets/small_sun_icon.svg" />
-        <p>Sunny and warm</p>
+        <p>{{ forecast.weather[0].description }}</p>
       </div>
       <div class="overview_divider"></div>
       <div class="overview_deets">
@@ -14,14 +23,14 @@
           class="overview_point"
           src="../../../assets/small_point_icon.svg"
         />
-        <p>Elsinore, DK</p>
+        <p>{{ city }} {{ country }}</p>
       </div>
       <div class="overview_deets">
         <img
           class="overview_calendar"
           src="../../../assets/small_calendar_icon.svg"
         />
-        <p>11 August, 2023 &nbsp;&nbsp;13:48 PM</p>
+        <p>{{ date | date : "dd / MM / yyyy  HH:mm:ss" }}</p>
       </div>
     </div>
   </div>
